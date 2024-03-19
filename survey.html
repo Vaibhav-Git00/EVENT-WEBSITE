@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="survey.css" />
+  </head>
+  <body>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">
+          <span>E</span>
+          <span>v</span>
+          <span>e</span>
+          <span>n</span>
+          <span>t</span>
+          <span> </span>
+          <span>S</span>
+          <span>u</span>
+          <span>r</span>
+          <span>v</span>
+          <span>e</span>
+          <span>y</span>
+          <span> </span>
+          <span>F</span>
+          <span>o</span>
+          <span>r</span>
+          <span>m</span>
+        </h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to share your experience with us
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Please enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Please enter your Email address "
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>How would you like to receive reminders about the event?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select your receiver</option>
+            <option value="street racer">Email</option>
+            <option value="spectator">SMS</option>
+            <option value="mechanic">Push Notifications</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>How likely are you to recommend this event to others?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Definitely</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="no"
+              type="radio"
+              class="input-radio"
+            />No</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>What is your interesting moment about this event?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Please select an option</option>
+            <option value="thrill">Bhangra Regiment</option>
+            <option value="the cars">Natsamarat</option>
+            <option value="the adrenalin rush">The Happieness Club</option>
+            <option value="The racing community">C2S2 Custody</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What would you like to recommend the events to be organized by us?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="different-roads"
+              type="checkbox"
+              class="input-checkbox"
+            />Seminars and Workshops</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="assign-old-roads"
+              type="checkbox"
+              class="input-checkbox"
+            />Cultural Festivals and Celebrations</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="one-controlled-road"
+              type="checkbox"
+              class="input-checkbox"
+            />Sports Events and Tournaments</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="hobbies"
+              type="checkbox"
+              class="input-checkbox"
+            />Networking Events</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="legal-on-assigned-roads"
+              type="checkbox"
+              class="input-checkbox"
+            />Hackathons and Tech Events</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Please enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
